@@ -1,5 +1,8 @@
 # This script executes during ConfigMgr task sequence.
 # Task sequence variable IsLaptop is created and value is set to TRUE if computer is a laptop.
+# Script author: Anders Rødland
+# www.andersrodland.com
+
 $tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
 
 #The chassis is the physical container that houses the components of a computer. Check if the machine’s chasis type is 9.Laptop 10.Notebook 14.Sub-Notebook
